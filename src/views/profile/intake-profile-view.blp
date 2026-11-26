@@ -1,0 +1,23 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $IntakeProfileView : Adw.Bin {
+  child: Box {
+    orientation: vertical;
+
+    Adw.StatusPage {
+      vexpand: true;
+      title: _("Profile");
+      description: _("Work in progress");
+      icon-name: "avatar-default-symbolic";
+    }
+
+    Button {
+      label: _("About Intake");
+      action-name: "app.about";
+      halign: center;
+      margin-top: 12;
+      margin-bottom: 12;
+    }
+  };
+}

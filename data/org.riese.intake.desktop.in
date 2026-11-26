@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=intake
+Exec=intake
+Icon=org.riese.intake
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

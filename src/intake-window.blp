@@ -1,0 +1,41 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $IntakeWindow : Adw.ApplicationWindow {
+  title: _("Intake");
+  default-width: 800;
+  default-height: 600;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {}
+
+    content: Adw.ViewStack stack {
+      Adw.ViewStackPage {
+        name: "hello";
+        title: _("Hello");
+        icon-name: "go-home-symbolic";
+        child: Label label {
+          label: _("Hello, World!");
+
+          styles [
+            "title-1",
+          ]
+        };
+      }
+
+      Adw.ViewStackPage {
+        name: "profile";
+        title: _("Profile");
+        icon-name: "avatar-default-symbolic";
+        child: $IntakeProfileView {};
+      }
+    };
+
+    [bottom]
+    Adw.ViewSwitcherBar {
+      stack: stack;
+      reveal: true;
+    }
+  };
+}

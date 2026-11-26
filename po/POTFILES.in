@@ -1,0 +1,9 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/org.riese.intake.desktop.in
+data/org.riese.intake.metainfo.xml.in
+data/org.riese.intake.gschema.xml
+src/main.c
+src/intake-window.c
+src/intake-window.blp
+src/views/profile/intake-profile-view.blp

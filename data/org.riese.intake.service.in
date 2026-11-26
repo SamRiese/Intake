@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.riese.intake
+Exec=@bindir@/intake --gapplication-service
